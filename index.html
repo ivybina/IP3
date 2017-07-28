@@ -10,6 +10,12 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="fun.js"></script>
     <title>Ping Pong</title>
+    <script language="JavaScript">
+    function showInput() {
+        document.getElementById('display').innerHTML =
+                    document.getElementById("user_input").value;
+    }
+    </script>
   </head>
   <body>
     <div class="container-fluid">
@@ -27,13 +33,17 @@
             <div class="game">
               <h2><strong>Let's play!</strong></h2>
               <p><strong>Rules;</strong></p>
-              <p>Ping Pong will count up to the number frm 1 with the following exceptions: </p>
+              <p>Ping Pong will count up to the number from 1 with the following exceptions: </p>
               <li>1. Numbers divided by 3 become "ping"</li>
               <li>2. Numbers divided by 5 become "pong"</li>
               <li>3. Numbers divided by 3 and 5 become "pingpong"</li>
               <p><strong>Enter your number here:</strong>
-            <input type="number" id="number" name="number" value="1"> <input type="submit" name="Ping Pong!">  </p>
+            <input type="number" id="user_input" name="number" value="1"> <input type="submit" name="Ping Pong!" onclick="showInput();"> </p>
+            <label>your numbers: </label>
+              <p><span id='display'></span></p>
             </div>
+
+
           </div>
     </div>
   </body>
