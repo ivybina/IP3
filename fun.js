@@ -2,8 +2,7 @@
 var num = function () {
   console.log(
 function num() {
-  var num;
-var num = new number();
+  var num =parseInt(document.getElementsById('number').value);
 if(num==2){
   return=" Ping";
 }
@@ -18,4 +17,5 @@ else {
 }
 
 }
+var ans;
 )}
