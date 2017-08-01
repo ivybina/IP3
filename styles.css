@@ -2,7 +2,7 @@
 .container-fluid{
 margin-top: 100px;
 margin-bottom: 100px;
-width :800px;
+width :1000px;
 height: 600px;
 /*border-radius: 2px;
 border-width: 2px;
@@ -19,7 +19,7 @@ border-color: black;*/
   background-color: yellow;
   color: black;
   text-align: center;
-  width: 800px;
+  width: 1000px;
 }
 .mybody{
   height:500px;
@@ -41,4 +41,11 @@ border-color: black;*/
   background-color: gold;
   margin-bottom: 0;
   color: black;
+}
+.submit{
+
+
+}
+.user_input{
+
 }
