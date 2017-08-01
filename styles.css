@@ -23,7 +23,7 @@ border-color: black;*/
 }
 .mybody{
   height:500px;
-  background: url(pingpong.jpg);
+  background-color: green;
   color:white;
 }
 .game{

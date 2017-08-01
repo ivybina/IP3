@@ -4,49 +4,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
     <link href="styles.css" rel="stylesheet">
-
+      <link href="fun.js" rel="script">
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
     <script src="fun.js"></script>
     <title>Ping Pong</title>
-    <script type="text/javascript">
-
-     function showInput() {
-       var number = document.getElementById("user_input").value
-
-      for (var i = 1; i < number; i++) {
-        alert (i)
-        if (i %5 == 0 && i %3 == 0) {
-           alert('pingpong')
-        }  else if (i %5 == 0){
-           alert('Pong')
-         }else if (i %3 == 0) {
-           alert('ping')
-         }
-      }
-
-                  // var x= document.getElementById("user_input");
-          //         function count(selectObject) {
-          //    var selectObject = 0;
-          //   for (var i = 0; i < selectObject.options.length; i++) {
-          //    if (selectObject.options[i].selected) {
-          //     numberSelected++;
-          //    }
-          // }
-          //     return numberSelected;
-          //     }
-          //     btn.addEventListener('click', function() {
-          //            alert('Number of options selected: ' + howMany(document.selectForm.musicTypes));
-          //             });
-          //
-          //            var btn = document.getElementById('display');
-                    document.getElementById('display').innerHTML =
-                                document.getElementById("user_input").value;
-                      // document.write( x)i
-                  }
-
-    </script>
 
   </head>
   <body>
@@ -70,10 +33,13 @@
               <li>2. Numbers divided by 5 become "pong"</li>
               <li>3. Numbers divided by 3 and 5 become "pingpong"</li>
               <p><strong>Enter your number here:</strong>
-            <input type="number" id="user_input" name="number" value="1">
-            <input type="submit" onclick="showInput()" value="Pingpong!" id="submit";> </p>
-            <label>your numbers: </label>
-              <p><span id='display'></span></p>
+               <form >
+                 <input type="text" id="user_input">
+                 <button type="submit"  id="submit" class="btn btn-md";>Ping Pong!</button>
+              </form>
+            </p>
+               <label>your numbers: </label>
+              <p id="display"> </p>
 
             </div>
 
