@@ -1,31 +1,36 @@
-var pingpongLoop = function(userInput) {
-
-
-var resultOfArray = [];
-for(var i = 1; i <= userInput; i += 1) {
-
-  if (((i % 3) === 0) && ((i % 5) === 0)) {
-    return resultOfArray.push("pingpong");
-  } else if ((i % 3) === 0) {
-    return resultOfArray.push("Ping");
-  }  else if ((i % 5) === 0){
-    return resultOfArray.push("Pong");
-  } else {
-    return resultOfArray.push(i);
-   }
-}
-return resultOfArray;
-}
-
-
 $(document).ready (function() {
-   $("#submit").click(function(event){
+   $("#submit").submit(function(event){
      event.preventDefault();
      var userInput = parseInt($("#user_input").val());
-     var resultOfArray = pingpongLoop(userInput);
-     $("#display").text(resultOfArray);
+     var results =loop(userInput);
+     $("#display").text(result);
+
     });
   });
+
+
+var loop = function(userInput) {
+
+var results= [];
+for(var i = 1; i <= loop; i+=1) {
+
+  if (((i % 3) === 0) && ((i % 5) === 0)) {
+    return result.push("pingpong");
+  } else if ((i % 3) === 0) {
+    return result.push("Ping");
+  }  else if ((i % 5) === 0){
+    return result.push("Pong");
+  } else {
+    return result.push(i);
+  }
+}
+return results;
+// result.forEach(function(userInput){
+//   alert (result);
+// }
+};
+
+
 
 
 

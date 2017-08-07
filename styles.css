@@ -16,21 +16,22 @@ border-color: black;*/
 .header{
   margin-left: -15px;
   height: 100px;
-  background-color: yellow;
+  background-color:purple;
   color: black;
   text-align: center;
   width: 1000px;
 }
 .mybody{
   height:500px;
-  background-color: green;
-  color:white;
+  background:url(back.jpg);
+  color:black;
+  text-align: 200px left;
 }
 .game{
   padding-left: 20px;
   width: 500px;
   height: 500px;
-  text-align:100px left;
+  text-align:200px left;
 }
 .about{
   text-align: center;
@@ -38,14 +39,7 @@ border-color: black;*/
   width: 300px;
   margin-left: 0;
   height: 480px;
-  background-color: gold;
+  background-color:purple;
   margin-bottom: 0;
   color: black;
-}
-.submit{
-
-
-}
-.user_input{
-
 }
