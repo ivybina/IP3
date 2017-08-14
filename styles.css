@@ -3,7 +3,7 @@
 margin-top: 100px;
 margin-bottom: 100px;
 width :1000px;
-height: 600px;
+height: 1100px;
 /*border-radius: 2px;
 border-width: 2px;
 border-top: 2px;
@@ -22,7 +22,7 @@ border-color: black;*/
   width: 1000px;
 }
 .mybody{
-  height:500px;
+  height:1000px;
   background:url(back.jpg);
   color:black;
   text-shadow: bold;
@@ -30,7 +30,7 @@ border-color: black;*/
 .game{
   padding-left: 20px;
   width: 500px;
-  height: 500px;
+  height: 1000px;
   text-align:100px left;
 }
 .about{
@@ -38,15 +38,16 @@ border-color: black;*/
   margin-top: 20px;
   width: 300px;
   margin-left: 0;
-  height: 480px;
+  height: 800px;
   background-color:purple;
   margin-bottom: 0;
   color: black;
 }
-.submit{
 
-
+ul li{
+    float: left;
+    width: 20%;//helps to determine number of columns, for instance 33.3% displays 3 columns
 }
-.user_input{
-
+ul{
+    list-style-type: disc;
 }
