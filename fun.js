@@ -1,19 +1,19 @@
 $(document).ready (function() {
    $("#submit").submit(function(event){
      event.preventDefault();
+      });
      var userInput = parseInt($("#user_input").val());
-     var results =loop(userInput);
+     var result=loop(userInput);
      $("#display").text(result);
 
-    });
+
   });
 
+// displayResults.append('<li>'+ result[i]+ '</li>');
 
 var loop = function(userInput) {
-
-var results= [];
-for(var i = 1; i <= loop; i+=1) {
-
+ var result= [];
+ for(var i = 1; i <= userInput; i+=1) {
   if (((i % 3) === 0) && ((i % 5) === 0)) {
     return result.push("pingpong");
   } else if ((i % 3) === 0) {
@@ -23,11 +23,9 @@ for(var i = 1; i <= loop; i+=1) {
   } else {
     return result.push(i);
   }
-}
-return results;
-// result.forEach(function(userInput){
-//   alert (result);
-// }
+
+ }
+ return result;
 };
 
 
